@@ -1,6 +1,6 @@
 docker build -t ukanuri/multi-cient:latest -t ukanuri/multi-client:$SHA -f ./client/Dockerfile ./client
 docker build -t ukanuri/multi-server:latest -t ukanuri/multi-server:$SHA -f ./server/Dockerfile ./server
-docker build -t ukanuri/multi-worker:latest -t ukanuri/multi-woker:$SHA -f ./worker/Dockerfile ./worker
+docker build -t ukanuri/multi-worker:latest -t ukanuri/multi-worker:$SHA -f ./worker/Dockerfile ./worker
 docker push ukanuri/multi-client:latest
 docker push ukanuri/multi-server:latest
 docker push ukanuri/multi-worker:latest
